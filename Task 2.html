@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Github</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <style>
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .bi {
+        font-size: 200%;
+        margin-left: 2%;
+        color: white;
+      }
+      .navbar {
+        background-color: #2f3d46 !important;
+        line-height: 70px;
+      }
+      .heading {
+        margin: 0 auto;
+        color: white;
+        letter-spacing: 2px;
+      }
+      .row {
+        background-color: #cad2c5;
+      }
+      .horizontal {
+        background-color: #353535;
+        margin: 20%;
+        height: 30em;
+        width: 80%;
+        border-radius: 10px;
+      }
+      .two {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2%;
+      }
+      .inputBox {
+        margin-top: 4%;
+        background-color: #353535;
+        border-radius: 5px;
+        border: 0px;
+        width: 70%;
+        height: 7%;
+      }
+      .inputBox::placeholder {
+        color: light rgb(177, 172, 172);
+        padding: 4%;
+        font-size: large;
+        letter-spacing: 1px;
+      }
+      .middle {
+        margin-top: 5%;
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+      }
+
+      .trio {
+        background-color: #353535;
+        padding: 10px;
+        border-radius: 5px;
+        height: 8em;
+        width: 20%;
+      }
+      .bottom {
+        margin-top: 6%;
+        background-color: #353535;
+        width: 85%;
+        height: 30%;
+        border-radius: 5px;
+      }
+
+      @media screen and (max-width: 767px) {
+        .horizontal {
+          margin: 0 auto;
+          margin-top: 10%;
+          margin-bottom: 5%;
+          width: 40%;
+        }
+        .two {
+          padding: 10px;
+        }
+        .inputBox {
+          width: 80%;
+          height: 40px;
+        }
+        .inputBox::placeholder {
+          font-size: medium;
+          padding: 10px;
+        }
+        .middle {
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-around;
+          margin: 6% 0 6% 0;
+        }
+        .trio {
+          width: 20%;
+          margin: 5%;
+          height: 60%;
+        }
+        .bottom {
+          width: 90%;
+          height: 90px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar bg-body-tertiary">
+        <div class="header container-fluid">
+          <i class="bi bi-github"></i>
+          <h3 class="heading">GITHUB</h3>
+        </div>
+      </nav>
+    </header>
+
+    <!-- divide into 3 + 9 -->
+
+    <div class="row">
+      <div class="one col-lg-3 col-md-3 col-sm-3 col-xs-3">
+        <div class="horizontal text-center"></div>
+      </div>
+      <div class="two col-lg-9 col-md-9 col-sm-9 col-xs-9">
+        <input class="inputBox" type="text" placeholder="Search" />
+        <div class="middle row">
+          <div class="trio col-lg-4 col-md-4 col-sm-4 col-xs-4"></div>
+          <div class="trio col-lg-4 col-md-4 col-sm-4 col-xs-4"></div>
+          <div class="trio col-lg-4 col-md-4 col-sm-4 col-xs-4"></div>
+        </div>
+        <div class="bottom"></div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
